@@ -7,6 +7,7 @@ import DashboardPage from '../screens/DashboardPage';
 import EventsListPage from '../screens/EventsListPage ';
 import EventDetailsPage from '../screens/EventDetailsPage';
 import CreateEditEventPage from '../screens/CreateEditEventPage';
+import CompaniesListPage from '../screens/CompaniesListPage';
 
 
 const Stack = createStackNavigator();
@@ -21,6 +22,7 @@ export default function AppNavigator() {
       <Stack.Screen name="EventsList" component={EventsListPage} options={{headerShown: false}}/>
       <Stack.Screen name="EventDetails" component={EventDetailsPage} options={{ headerShown: false }} />
       <Stack.Screen name="CreateEditEvent" component={CreateEditEventPage} options={{ headerShown: false }} />
+      <Stack.Screen name="CompaniesList" component={CompaniesListPage} options={{ headerShown: false }} />
     </Stack.Navigator>
   );
 }

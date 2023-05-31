@@ -9,6 +9,11 @@ export default function DashboardPage() {
     navigation.navigate("Splash");
   };
 
+  const handleViewPartners = () => {
+    navigation.navigate('CompaniesList'); // Substitua 'PartnersList' pelo nome da tela de lista de parceiros no seu aplicativo
+  };
+
+
   const handleLogout = () => {
     navigation.navigate('Login');
   };
@@ -27,7 +32,11 @@ export default function DashboardPage() {
       <Text style={styles.content}>Bem-vindo ao Dashboard!</Text>
       <TouchableOpacity onPress={handleViewEvents} style={styles.logoutButton}>
         <Text style={styles.logoutButtonText}>Ver eventos</Text>
+      </TouchableOpacity>      
+      <TouchableOpacity onPress={handleViewPartners} style={styles.viewEventsButton}>
+        <Text style={styles.viewEventsButtonText}>Ver parceiros</Text>
       </TouchableOpacity>
+
       <TouchableOpacity onPress={handleLogout} style={styles.logoutButton}>
         <Text style={styles.logoutButtonText}>Sair</Text>
       </TouchableOpacity>
@@ -80,5 +89,18 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#fff',
   },
+  viewEventsButton: {
+    marginTop: 10,
+    paddingHorizontal: 25,
+    paddingVertical: 10,
+    backgroundColor: '#4834DF',
+    borderRadius: 20,
+  },
+  viewEventsButtonText: {
+    fontSize: 15,
+    fontWeight: 'bold',
+    color: '#fff',
+  },
   
+
 });

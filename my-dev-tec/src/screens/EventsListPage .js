@@ -7,11 +7,7 @@ export default function EventsListPage() {
 
   const handleGoBackToMain = () => {
     navigation.navigate('Dashboard');
-  };
-
-  const handleLogout = () => {
-    navigation.navigate('Login');
-  };
+  };  
 
   const [events, setEvents] = useState([
     {
@@ -52,7 +48,6 @@ export default function EventsListPage() {
   };
 
   const deleteEvent = (event) => {
-    // Lógica para excluir o evento do array "events" [ Desenvolvimento versão 1.1 ]
     const updatedEvents = events.filter((item) => item.id !== event.id);
     setEvents(updatedEvents);
   };
@@ -81,10 +76,7 @@ export default function EventsListPage() {
           keyExtractor={(item) => item.id.toString()}
           contentContainerStyle={styles.eventList}
         />
-      </View>
-      <TouchableOpacity onPress={handleLogout} style={styles.logoutButton}>
-        <Text style={styles.logoutButtonText}>Sair</Text>
-      </TouchableOpacity>
+      </View>      
     </View>
   );
 }
@@ -95,14 +87,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#F2F2F2',
-    alignItems: 'center',
-    justifyContent: 'center',
+    paddingHorizontal: 20,
+    paddingTop: 50,
   },
   backButton: {
     position: 'absolute',
-    top: 40,
+    top: 20,
     left: 10,
-    zIndex: 1,
   },
   backButtonText: {
     fontSize: 16,
@@ -111,14 +102,18 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontWeight: 'bold',
-    marginBottom: 30,
+    marginBottom: 20,
     color: '#4834DF',
   },
   eventListContainer: {
     flex: 1,
-    width: width * 0.8,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  eventList: {
+    width: width * 0.9,
+    flexGrow: 1,
+    paddingBottom: 20,
   },
   eventItem: {
     backgroundColor: '#fff',
@@ -144,13 +139,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: '#4834DF',
   },
-  logoutButton: {
-    marginTop: 20,
-    paddingHorizontal: 25,
-    paddingVertical: 10,
-    backgroundColor: '#4834DF',
-    borderRadius: 20,
-  },
+  
   logoutButtonText: {
     fontSize: 15,
     fontWeight: 'bold',
