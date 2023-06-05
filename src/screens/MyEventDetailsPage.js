@@ -7,18 +7,18 @@ export default function MyEventDetailsPage() {
   const route = useRoute();
   const event = route.params?.event;
 
-  // Event data state
+  
   const [location, setLocation] = useState(event.location);
   const [date, setDate] = useState(event.date);
   const [time, setTime] = useState(event.time);
   const [creator, setCreator] = useState(event.creator);
 
   const handleSave = () => {
-    // Logic to save changes to the event
+    
   };
 
   const handleDelete = () => {
-    // Logic to delete the event
+    
   };
 
   const handleGoBack = () => {

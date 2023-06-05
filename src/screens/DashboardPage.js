@@ -30,8 +30,7 @@ export default function DashboardPage() {
       <TouchableOpacity onPress={handleGoBackToMain} style={styles.backButton}>
         <Text style={styles.backButtonText}>← Voltar</Text>
       </TouchableOpacity>
-      <Text style={styles.title}>Dashboard</Text>
-      {/* Conteúdo do Feed que será desenvolvido */}
+      <Text style={styles.title}>Dashboard</Text>      
       <Text style={styles.content}>Bem-vindo ao Dashboard!</Text>
       <TouchableOpacity onPress={handleViewEvents} style={styles.logoutButton}>
         <Text style={styles.logoutButtonText}>Ver eventos</Text>

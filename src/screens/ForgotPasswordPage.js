@@ -7,7 +7,7 @@ export default function ForgotPasswordPage() {
   const [email, setEmail] = useState('');
 
   const handleResetPassword = () => {
-    // Adicione aqui a lógica para resetar a senha
+    // B-E
   };
 
   const handleGoBack = () => {

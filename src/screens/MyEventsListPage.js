@@ -19,10 +19,10 @@ export default function MyEventsListPage() {
     const staticEvents = [
       { id: 1, name: 'Evento 1', location: 'Local 1', date: '2023-06-05', time: '10:00', creator: 'Usuário 1' },
       { id: 2, name: 'Evento 2', location: 'Local 2', date: '2023-06-06', time: '14:30', creator: 'Usuário 2' },
-      // Adicione mais eventos para teste
+      
       { id: 3, name: 'Evento 3', location: 'Local 3', date: '2023-06-07', time: '16:00', creator: 'Usuário 3' },
       { id: 4, name: 'Evento 4', location: 'Local 4', date: '2023-06-08', time: '18:30', creator: 'Usuário 4' },
-      // ...
+      
     ];
     setEvents(staticEvents);
   }, []);

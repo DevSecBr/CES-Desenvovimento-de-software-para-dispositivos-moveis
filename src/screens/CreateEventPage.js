@@ -11,7 +11,7 @@ export default function CreateEventPage() {
   const [time, setTime] = useState('');
 
   const handleCreateEvent = () => {
-    // Adicione aqui a lógica para criar o evento
+    
   };
 
   const handleGoBack = () => {
