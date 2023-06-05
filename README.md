@@ -18,7 +18,7 @@ Para realizar o deploy dessa aplicação, é necessário instalar as seguintes d
 </ul> 
 
 ## Escopo de telas da aplicação
-Inicialmente a aplicação deverá conter um total de 13 screens (telas), sendo elas:
+Inicialmente a aplicação deverá conter um total de 9 screens (telas), sendo elas:
 <ul>
   <li> SplashScreen: tela de abertura mostrando o logo da aplicação e dando um feedback visual enquanto a aplicação carrega.</li> 
   <li> LoginPage: tela para os usuários inserirem suas credenciais (email e senha), fazerem login na aplicação e se necessário realizar a recuperação de senha.</li>
