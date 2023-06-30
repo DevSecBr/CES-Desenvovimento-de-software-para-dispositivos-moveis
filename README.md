@@ -13,9 +13,10 @@ Para realizar o deploy dessa aplicação, é necessário instalar as seguintes d
   <li> React-navigation: pacote para gerenciar o fluxo de navegação entre as telas do aplicativo</li>
   <li> React-navigation-stack: pacote que fornece um conjunto de opções de navegação empilhada para o react-navigation </li>
   <li> Node.js: é um software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que permite a execução de códigos JavaScript fora de um navegador web. </li>
-  <li> SQLite: O SQLite é uma solução de banco de dados serverless, o que significa que não requer um servidor separado para funcionar. Ele opera diretamente na máquina ou dispositivo onde está instalado, permitindo que os aplicativos acessem o banco de dados diretamente por meio de chamadas de API.
-  </li>
-  <li> Axios: O Axios é uma biblioteca JavaScript popular para realizar solicitações de rede, principalmente em aplicativos da web. </li>
+  <li> Express.js: é um framework para construir a API </li>
+  <li> Sequelize: é um ORM para manipulação do banco de dados </li>
+  <li> MySQL: é o banco de dados </li>
+  
 
   
 </ul> 
